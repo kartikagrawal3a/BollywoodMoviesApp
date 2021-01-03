@@ -21,7 +21,9 @@ body{
   text-shadow: 3px 3px 5px grey;
 }
 .row{
-  padding-top: 60px;
+  width: 95%;
+  margin: 0px auto;
+  padding: 60px 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -69,16 +71,22 @@ body{
   border-radius: 5px;
   font-family: 'Raleway';
   transition: all 0.3s;
+  cursor: pointer;
 }
 .cardInfo button:hover{
   background-color: burlywood;
   color: black;
 }
 @media screen and (max-width : 1000px){
+  .head1{
+    margin-bottom: 80px;
+  }
   .row{
+    width: 100%;
     flex-direction: column;
+    padding: 0;
   }
   .card{
-    margin: 0px auto 40px auto;
+    margin: 0px auto 60px auto;
   }
 }
