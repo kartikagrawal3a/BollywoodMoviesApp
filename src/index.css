@@ -22,9 +22,8 @@ body{
 }
 .row{
   padding-top: 60px;
-}
-.row{
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
 }
 .card{
@@ -74,4 +73,12 @@ body{
 .cardInfo button:hover{
   background-color: burlywood;
   color: black;
+}
+@media screen and (max-width : 1000px){
+  .row{
+    flex-direction: column;
+  }
+  .card{
+    margin: 0px auto 40px auto;
+  }
 }
